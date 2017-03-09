@@ -1,27 +1,26 @@
 extends layout
 
 block content
-  h1 Hackathon Starter
-  p.lead A boilerplate for Node.js web applications.
+  h1 Fashion Directory
+  p.lead Learn more about apparel companies, clothing brands, stores & lines.
   hr
   .row
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    .col-sm-4
+      h2 Brands
+      p One company can have multiple brands; some are sold exclusively at one store and some may be carried at many stores.
+      p Recently updated brands:
+      table.table.table-condensed
+        tr
+          td Test
+          td Test
+      p: a.btn.btn-default(href='/brands', role='button') View all brands »
+    .col-sm-4
+      h2 Companies
+      p A company can have one brand or many.
       p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
+        a.btn.btn-default(href='/companies', role='button') View all companies »
+  .row
+    .col-sm-12
+      h2 Coming soon...
+      p Companies, styles, dictionary of terms and concepts, marketplace, and more...
+      p 
